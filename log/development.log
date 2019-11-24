@@ -1,0 +1,417 @@
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-19 04:24:29.923590"], ["updated_at", "2019-10-19 04:24:29.923590"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-10-19 13:25:49 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.8ms | Allocations: 483)
+Completed 200 OK in 26ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 2828)
+
+
+Started GET "/" for ::1 at 2019-11-03 11:39:14 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.5ms | Allocations: 310)
+Completed 200 OK in 17ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 1734)
+
+
+Started GET "/hello" for ::1 at 2019-11-03 11:39:27 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering application/hello.html.erb within layouts/application
+  Rendered application/hello.html.erb within layouts/application (Duration: 3.8ms | Allocations: 353)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/amifujii/Development/Testapp/testapp20191019/public/packs
+Completed 200 OK in 5826ms (Views: 5824.5ms | ActiveRecord: 0.0ms | Allocations: 1359006)
+
+
+Started GET "/trainings/one" for ::1 at 2019-11-03 12:08:01 +0900
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrainingsController#one as HTML
+  Rendering trainings/one.html.erb within layouts/application
+  Rendered trainings/one.html.erb within layouts/application (Duration: 1.5ms | Allocations: 203)
+Completed 200 OK in 1139ms (Views: 1129.3ms | ActiveRecord: 0.0ms | Allocations: 1358530)
+
+
+Started GET "/hello" for ::1 at 2019-11-09 10:19:31 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#hello as HTML
+  Rendering application/hello.html.erb within layouts/application
+  Rendered application/hello.html.erb within layouts/application (Duration: 9.2ms | Allocations: 93)
+Completed 200 OK in 93ms (Views: 68.8ms | ActiveRecord: 0.0ms | Allocations: 5413)
+
+
+Started GET "/trainings/one" for ::1 at 2019-11-09 10:19:32 +0900
+Processing by TrainingsController#one as HTML
+  Rendering trainings/one.html.erb within layouts/application
+  Rendered trainings/one.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 5037)
+
+
+Started GET "/" for ::1 at 2019-11-09 11:45:27 +0900
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.8ms | Allocations: 802)
+Completed 200 OK in 25ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 2352)
+
+
+Started GET "/trainings/one" for ::1 at 2019-11-09 11:45:43 +0900
+Processing by TrainingsController#one as HTML
+  Rendering trainings/one.html.erb within layouts/application
+  Rendered trainings/one.html.erb within layouts/application (Duration: 2.9ms | Allocations: 586)
+Completed 200 OK in 1923ms (Views: 1921.7ms | ActiveRecord: 0.0ms | Allocations: 1353738)
+
+
+Started GET "/hello" for ::1 at 2019-11-09 11:48:07 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering application/hello.html.erb within layouts/application
+  Rendered application/hello.html.erb within layouts/application (Duration: 0.8ms | Allocations: 92)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5387)
+
+
+Started GET "/" for ::1 at 2019-11-09 12:40:06 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.2ms | Allocations: 310)
+Completed 200 OK in 22ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 1948)
+
+
+Started GET "/" for ::1 at 2019-11-09 12:44:53 +0900
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.9ms | Allocations: 310)
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 1849)
+
+
+Started GET "/hello" for ::1 at 2019-11-09 12:45:07 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering application/hello.html.erb within layouts/application
+  Rendered application/hello.html.erb within layouts/application (Duration: 1.2ms | Allocations: 86)
+Completed 200 OK in 1276ms (Views: 1274.8ms | ActiveRecord: 0.0ms | Allocations: 1352985)
+
+
+Started GET "/trainings/one" for ::1 at 2019-11-09 12:45:40 +0900
+Processing by TrainingsController#one as HTML
+  Rendering trainings/one.html.erb within layouts/application
+  Rendered trainings/one.html.erb within layouts/application (Duration: 0.7ms | Allocations: 90)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 5659)
+
+
+Started GET "/" for ::1 at 2019-11-09 17:57:59 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.2ms | Allocations: 310)
+Completed 200 OK in 24ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 1938)
+
+
+Started GET "/hello" for ::1 at 2019-11-09 17:58:32 +0900
+Processing by ApplicationController#hello as HTML
+  Rendering application/hello.html.erb within layouts/application
+  Rendered application/hello.html.erb within layouts/application (Duration: 0.8ms | Allocations: 86)
+Completed 200 OK in 1058ms (Views: 1056.8ms | ActiveRecord: 0.0ms | Allocations: 1353136)
+
+
+Started GET "/trainings/one" for ::1 at 2019-11-09 17:59:07 +0900
+Processing by TrainingsController#one as HTML
+  Rendering trainings/one.html.erb within layouts/application
+  Rendered trainings/one.html.erb within layouts/application (Duration: 0.8ms | Allocations: 91)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 5670)
+
+
+Started GET "/" for ::1 at 2019-11-10 10:53:57 +0900
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.7ms | Allocations: 310)
+Completed 200 OK in 19ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 1844)
+
+
+Started GET "/workings/new" for ::1 at 2019-11-10 10:54:17 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/workings/new"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/Workings/new" for ::1 at 2019-11-10 10:54:48 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Workings/new"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/workings/new" for ::1 at 2019-11-10 10:56:20 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WorkingsController#new as HTML
+  Rendering workings/new.html.erb within layouts/application
+  Rendered workings/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 80)
+Completed 200 OK in 1029ms (Views: 1028.1ms | ActiveRecord: 0.0ms | Allocations: 1359353)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20191110024128)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191110024128"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-11-15 16:10:09 +0900
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.9ms | Allocations: 483)
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 2947)
+
+
+Started GET "/" for ::1 at 2019-11-16 11:25:36 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.8ms | Allocations: 884)
+Completed 200 OK in 28ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 2477)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20191116023552)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191116023552"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-11-16 11:48:00 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/amifujii/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.4ms | Allocations: 1426)
+Completed 200 OK in 20ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 3020)
+
+
+Started GET "/posts" for ::1 at 2019-11-16 11:49:03 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1388)
+Completed 200 OK in 1380ms (Views: 1373.6ms | ActiveRecord: 1.6ms | Allocations: 1375056)
+
+
+Started GET "/posts/new" for ::1 at 2019-11-16 11:52:05 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 46.3ms | Allocations: 7275)
+  Rendered posts/new.html.erb within layouts/application (Duration: 48.1ms | Allocations: 7635)
+Completed 200 OK in 79ms (Views: 67.1ms | ActiveRecord: 0.9ms | Allocations: 18308)
+
+
+Started POST "/posts" for ::1 at 2019-11-16 11:54:07 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"ddnljDE+NJwtbOiDUPWtelM5tkpJOyWhBb9+x5Av/L2QhGMbi7QaoJBw69DQAZgd3Ogr7SpODTZ1qwpOEbdAKA==", "post"=>{"title"=>"タイトル", "content"=>"コンテント"}, "commit"=>"Create Post"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+  [1m[36mPost Create (1.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "タイトル"], ["content", "コンテント"], ["created_at", "2019-11-16 02:54:07.993544"], ["updated_at", "2019-11-16 02:54:07.993544"]]
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 10ms (ActiveRecord: 3.1ms | Allocations: 2817)
+
+
+Started GET "/posts/1" for ::1 at 2019-11-16 11:54:08 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 271)
+Completed 200 OK in 27ms (Views: 20.1ms | ActiveRecord: 0.4ms | Allocations: 8896)
+
+
+Started GET "/posts" for ::1 at 2019-11-16 11:55:12 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 771)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.2ms | Allocations: 8301)
+
+
+Started GET "/posts/new" for ::1 at 2019-11-16 12:03:27 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.9ms | Allocations: 705)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 797)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 8325)
+
+
+Started POST "/posts" for ::1 at 2019-11-16 12:03:45 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"U77qMv5Mpl0Uv28fY9NM6t0rj7zw2UKwjFPFcKWJDLa242ylRMaIYamjbEzjJ3mNUvoSG5Osaif8R7H5JBGwIw==", "post"=>{"title"=>"タイトル２", "content"=>"コンテント２"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+  [1m[36mPost Create (1.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "タイトル２"], ["content", "コンテント２"], ["created_at", "2019-11-16 03:03:45.309781"], ["updated_at", "2019-11-16 03:03:45.309781"]]
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 14ms (ActiveRecord: 3.9ms | Allocations: 2576)
+
+
+Started GET "/posts/2" for ::1 at 2019-11-16 12:03:45 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 95)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.2ms | Allocations: 8178)
+
+
+Started GET "/posts" for ::1 at 2019-11-16 12:04:03 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 887)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 8404)
+
+
+Started DELETE "/posts/1" for ::1 at 2019-11-16 12:04:39 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nPWqqezcqITjLnBg3c/yZ3y8oCOAqketN2Qr4F97OSHThFitLXNezOhMvyOLCqiOQN0QLbOw37U/3Mt2nxM7PA==", "id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67:in `set_post'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:57:in `destroy'
+  [1m[36mPost Destroy (1.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/posts_controller.rb:57:in `destroy'
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:57:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 14ms (ActiveRecord: 8.1ms | Allocations: 2664)
+
+
+Started GET "/posts" for ::1 at 2019-11-16 12:04:39 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 752)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.2ms | Allocations: 8305)
+
+
+Started GET "/posts/2/edit" for ::1 at 2019-11-16 12:08:09 +0900
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.7ms | Allocations: 770)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1028)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 0.2ms | Allocations: 9198)
+
+
+Started PATCH "/posts/2" for ::1 at 2019-11-16 12:08:22 +0900
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"K/Gr60D9Vt4+ib4ZMZcyxbn6TKgP75mZU2ZgXtg4X6K2lVjr3VX4iQin0ak49t2K00kFFqNkL8RWb5oNyRdcRg==", "post"=>{"title"=>"タイトル２", "content"=>"コンテント２"}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67:in `set_post'
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1195)
+
+
+Started GET "/posts/2" for ::1 at 2019-11-16 12:08:22 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 96)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 8165)
+
+
+Started GET "/posts/2/edit" for ::1 at 2019-11-16 12:08:31 +0900
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.5ms | Allocations: 742)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 862)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.6ms | Allocations: 8897)
+
+
